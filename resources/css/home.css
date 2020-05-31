@@ -1,0 +1,110 @@
+/*GENERAL*/
+body{padding-top: 80px;}
+.fuente{
+font-family: 'Raleway', sans-serif;
+}
+
+/*CAJAS EN DIAGONAL*/
+.diagonal-content{
+position: relative;
+padding-top: 50px;
+padding-bottom: 100px;
+z-index: 3;
+}
+.diagonal-mask{
+position: absolute;
+height: inherit;
+top: 0;
+right: 0;
+left: 0;
+background-color: #F8F9FA;
+z-index: 2;
+-webkit-transform: skewY(-3deg);
+-ms-transform: skewY(-3deg);
+transform: skewY(-3deg);
+}
+.diagonal-img{
+max-height: 350px;
+-webkit-transform: skewY(-3deg);
+-ms-transform: skewY(-3deg);
+transform: skewY(-3deg);
+}
+
+/*ICONOS ANIMADOS SECCION VALORES*/
+.valores .columna{
+cursor: pointer;
+}
+.valores .columna ion-icon{
+transition: all 0.7s ease-in-out;
+}
+.valores .columna:hover ion-icon{
+-webkit-transform: rotate(360deg) scale(1.4);
+-ms-transform: rotate(360deg) scale(1.4);
+transform: rotate(360deg) scale(1.4);
+transition: all 0.7s ease-in-out;
+}
+
+/*NAVBAR ANIMADO*/
+/*iconos twitter y facebook*/
+.icon-animated ion-icon{
+transition: all 0.7s ease-in-out;
+}
+.icon-animated:hover ion-icon{
+-webkit-transform: rotate(360deg) scale(1.5);  
+-ms-transform: rotate(360deg) scale(1.5);
+transform: rotate(360deg) scale(1.5);
+transition: all 0.7s ease-in-out;
+}
+.twitter:hover{
+color: #1DA1F2 !important;
+}
+.facebook:hover{
+color: #3B579D !important;
+}
+/*end iconos twitter y facebook*/
+
+.navbar-nav .item-animated a{
+position: relative;
+}
+.navbar-nav .item-animated a::after{
+position: absolute;
+bottom: 7px;
+left: 0px;
+width: 100%;
+height: 4px;
+background-color: #1DA1F2;
+content: "";
+opacity: 0;
+transition: all 0.3s ease-in-out;
+-webkit-transform: translateY(20px);   
+-ms-transform: translateY(20px);
+transform: translateY(20px);
+}
+.navbar-nav .item-animated a:hover::after{
+opacity:1;
+-webkit-transform: translateY(15px); 
+-ms-transform: translateY(15px);
+transform: translateY(15px);
+}
+
+/*TITULO*/
+.linea-titulo{
+width: 30%;
+height: 3px;
+border-top: 2px solid #6C757D;
+border-left: 20px solid white;
+border-right: 20px solid white;
+border-bottom: 2px solid #1DA1F2;
+margin: auto;
+}
+/*COLORES*/
+.text-color1{
+color: #1DA1F2;
+}
+
+/*GOOGLE MAPS*/
+#google-map{
+width: 100%;
+height: 400px;
+border:0;
+}
